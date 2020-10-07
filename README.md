@@ -7,8 +7,11 @@ A really light script that will take around 900mb - 1gb.
 
 # Installation
 make sure git is installed.
-write: git clone https://github.com/TheGamerz29/Ez_Termux_Desktop.git
+# .
+git clone https://github.com/TheGamerz29/Ez_Termux_Desktop.git
+# .
 cd Ez_Termux_Desktop
-sh install.sh
+# .
+bash install.sh
 
 That's it.
