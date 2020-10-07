@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 echo "This will install a desktop environment for Termux."
 echo "It will take around 900mb-1gb of your space to install."
 read -p "Continue? (y/n) " answer
