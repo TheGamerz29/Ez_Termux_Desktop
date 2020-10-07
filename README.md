@@ -10,8 +10,6 @@ make sure git is installed.
 # .
 Just copy & paste this:
 ```
-function test() {
-  console.log("git clone https://github.com/TheGamerz29/Ez_Termux_Desktop.git && cd Ez_Termux_Desktop && clear && bash install.sh");
-}
+git clone https://github.com/TheGamerz29/Ez_Termux_Desktop.git && cd Ez_Termux_Desktop && clear && bash install.sh
 ```
 That's it.
