@@ -20,7 +20,8 @@ case ${answer:0:1} in
         echo "vncserver"
         echo "To stop it, type:"
         echo "vncserver -kill {display number}"
-        esac
+        clear
+        echo "DONE!"
     ;;
     * )
         echo "Abort..."
