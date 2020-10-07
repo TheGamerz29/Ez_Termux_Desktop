@@ -14,7 +14,7 @@ case ${answer:0:1} in
         screenfetch
         clear
         echo "downloading required files..."
-        pkg update && pkg upgrade && pkg install -y x11-repo && pkg install -y tigervnc openbox obconf netsurf xorg-xsetroot xcompmgr xterm polybar st libnl zsh geany pcmanfm rofi feh neofetch htop vim elinks mutt git wget curl xfce4-settings
+        pkg update && pkg upgrade && pkg install -y x11-repo && pkg install -y tigervnc wget curl openbox obconf netsurf xorg-xsetroot xcompmgr xterm polybar st libnl zsh geany pcmanfm rofi feh neofetch htop vim elinks mutt git wget curl xfce4-setting
         figlet -c DONE.
         screenfetch
         clear
@@ -22,6 +22,7 @@ case ${answer:0:1} in
         cd $HOME && git clone https://github.com/adi1090x/termux-desktop
         cd termux-desktop
         cp -rf ./home /data/data/com.termux/files && cp -rf ./usr /data/data/com.termux/files
+        sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
         vncserver -localhost
         export DISPLAY=":1"
         vncserver -kill :1
