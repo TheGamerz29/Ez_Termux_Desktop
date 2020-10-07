@@ -6,7 +6,7 @@ read -p "Continue? (y/n) " answer
 case ${answer:0:1} in
     y|Y )
         echo "Downloading required package..."
-        pkg update && pkg upgrade && pkg install -y x11-repo && pkg install tigervnc openbox obconf xorg-xsetroot xcompmgr xterm polybar st libnl zsh geany pcmanfm rofi feh neofetch htop vim elinks mutt git wget curl xfce4-settings
+        pkg update && pkg upgrade && pkg install -y x11-repo && pkg install -y tigervnc openbox obconf xorg-xsetroot xcompmgr xterm polybar st libnl zsh geany pcmanfm rofi feh neofetch htop vim elinks mutt git wget curl xfce4-settings
         echo "done."
         clear
         echo "Configuring..."
