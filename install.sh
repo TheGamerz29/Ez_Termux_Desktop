@@ -4,8 +4,7 @@ apt install -y figlet screenfetch
 screenfetch
 clear
 figlet -c       EZ_TERMUX_DESKTOP
-figlet -c         By TheGamerz
-figlet -c thx to adi1090x for the toturial!
+echo "."
 echo "This will install a desktop environment for Termux."
 echo "It will take around 900mb-1gb of your space to install."
 echo "."
