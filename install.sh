@@ -1,11 +1,12 @@
 #!/bin/bash
+## Code from adi1090! Thx!. Without him, i can't create this!
 echo "This will install a desktop environment for Termux."
 echo "It will take around 900mb-1gb of your space to install."
 read -p "Continue? (y/n) " answer
 case ${answer:0:1} in
     y|Y )
         echo "Downloading required package..."
-        pkg update && pkg upgrade && pkg install x11-repo && pkg install tigervnc openbox obconf xorg-xsetroot xcompmgr xterm polybar st libnl zsh geany pcmanfm rofi feh neofetch htop vim elinks mutt git wget curl xfce4-settings
+        pkg update && pkg upgrade && pkg install -y x11-repo && pkg install tigervnc openbox obconf xorg-xsetroot xcompmgr xterm polybar st libnl zsh geany pcmanfm rofi feh neofetch htop vim elinks mutt git wget curl xfce4-settings
         echo "done."
         clear
         echo "Configuring..."
