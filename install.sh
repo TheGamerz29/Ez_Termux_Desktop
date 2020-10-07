@@ -20,9 +20,9 @@ case ${answer:0:1} in
         echo "You can now start the desktop by typing:"
         echo "vncserver"
         echo "To stop it, type:"
-        echo "vncserver -kill {display number}"
-        clear
+        echo "vncserver -kill {display number}
         echo "DONE!"
+        esac
     ;;
     * )
         echo "Abort..."
