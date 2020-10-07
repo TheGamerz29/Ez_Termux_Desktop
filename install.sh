@@ -8,7 +8,7 @@ figlet -c         By TheGamerz
 figlet -c thx to adi1090x for the toturial!
 echo "This will install a desktop environment for Termux."
 echo "It will take around 900mb-1gb of your space to install."
-echo.
+echo "."
 read -p "Continue? (y/n) " answer
 case ${answer:0:1} in
     y|Y )
@@ -17,6 +17,7 @@ case ${answer:0:1} in
         echo "downloading required files..."
         pkg update && pkg upgrade && pkg install -y x11-repo && pkg install -y tigervnc openbox obconf netsurf xorg-xsetroot xcompmgr xterm polybar st libnl zsh geany pcmanfm rofi feh neofetch htop vim elinks mutt git wget curl xfce4-settings
         figlet -c DONE.
+        screenfetch
         clear
         echo "Configuring..."
         cd $HOME && git clone https://github.com/adi1090x/termux-desktop
@@ -30,13 +31,13 @@ case ${answer:0:1} in
         figlet -c  Congratulations!
         echo "  Ez_Termux_Desktop"
         echo " Have been installed successfully on this device"
-        echo.
+        echo "."
         echo "You can now access them by typing:"
         echo "vncserver"
-        echo.
+        echo "."
         echo "To stop the server, type:"
         echo "vncserver -kill {Display Number}"
-        echo.
+        echo "."
     ;;
     * )
         screenfetch
