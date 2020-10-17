@@ -14,7 +14,7 @@ case ${answer:0:1} in
         screenfetch>nul
         clear
         echo "downloading required files..."
-        pkg update && pkg upgrade && pkg install -y x11-repo && pkg install -y tigervnc openbox obconf xorg-xsetroot xcompmgr xterm polybar st libnl zsh geany pcmanfm rofi feh neofetch htop vim elinks mutt git wget curl xfce4-settings
+        pkg update && pkg upgrade && pkg install -y x11-repo && pkg install -y tigervnc openbox obconf xorg-xsetroot xcompmgr xterm polybar st libnl zsh geany pcmanfm rofi feh neofetch htop vim elinks mutt git wget curl xfce4-settings>nul
         figlet -c DONE.
         screenfetch>nul
         clear
