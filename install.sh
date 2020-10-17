@@ -1,5 +1,6 @@
 #!/bin/bash
 ## Code from adi1090! Thx!. Without him, i can't create this!
+echo Initializing.... Please be patient.
 apt install -y figlet screenfetch cowsay>nul
 clear
 screenfetch>nul
@@ -15,7 +16,9 @@ case ${answer:0:1} in
         screenfetch>nul
         clear
         echo "downloading required files..."
-        pkg update>nul && pkg upgrade>nul && pkg install -y x11-repo>nul && pkg install -y tigervnc openbox obconf xorg-xsetroot xcompmgr xterm polybar st libnl zsh geany pcmanfm rofi feh neofetch htop vim elinks mutt git wget curl xfce4-settings>nul
+        echo "don't mind the error."
+        echo "it's normal"
+        pkg update -y>nul && pkg upgrade>nul && pkg install -y x11-repo>nul && pkg install -y tigervnc openbox obconf xorg-xsetroot xcompmgr xterm polybar st libnl zsh geany pcmanfm rofi feh neofetch htop vim elinks mutt git wget curl xfce4-settings>nul
         clear
         figlet -c DONE.
         screenfetch>nul
