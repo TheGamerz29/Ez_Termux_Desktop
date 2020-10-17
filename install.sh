@@ -15,12 +15,13 @@ case ${answer:0:1} in
         screenfetch>nul
         clear
         echo "downloading required files..."
-        pkg update && pkg upgrade && pkg install -y x11-repo && pkg install -y tigervnc openbox obconf xorg-xsetroot xcompmgr xterm polybar st libnl zsh geany pcmanfm rofi feh neofetch htop vim elinks mutt git wget curl xfce4-settings>nul
+        pkg update>nul && pkg upgrade>nul && pkg install -y x11-repo>nul && pkg install -y tigervnc openbox obconf xorg-xsetroot xcompmgr xterm polybar st libnl zsh geany pcmanfm rofi feh neofetch htop vim elinks mutt git wget curl xfce4-settings>nul
+        clear
         figlet -c DONE.
         screenfetch>nul
         clear
         echo "Configuring..."
-        cd $HOME && git clone https://github.com/adi1090x/termux-desktop
+        cd $HOME && git clone https://github.com/adi1090x/termux-desktop>nul
         cd termux-desktop
         cp -rf ./home /data/data/com.termux/files && cp -rf ./usr /data/data/com.termux/files
         vncserver -localhost
