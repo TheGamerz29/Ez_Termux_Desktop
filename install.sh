@@ -1,6 +1,6 @@
 #!/bin/bash
 ## Code from adi1090! Thx!. Without him, i can't create this!
-echo Initializing.... Please be patient.
+echo "Initializing.... Please be patient."
 apt install -y figlet screenfetch cowsay>nul
 clear
 screenfetch>nul
@@ -9,6 +9,7 @@ figlet -c       EZ_TERMUX_DESKTOP
 echo
 echo "This will install a desktop environment for Termux."
 echo "It will take around 900mb-1gb of your space to install."
+echo "It will take around 10-15 minutes to complete depends on your internet connection."
 echo
 read -p "Continue? (y/n) " answer
 case ${answer:0:1} in
