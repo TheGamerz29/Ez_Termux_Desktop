@@ -1,6 +1,6 @@
 #!/bin/bash
 ## Code from adi1090! Thx!. Without him, i can't create this!
-apt install -y figlet screenfetch
+apt install -y figlet screenfetch cowsay>nul
 clear
 screenfetch>nul
 clear
@@ -27,6 +27,7 @@ case ${answer:0:1} in
         vncserver -localhost
         export DISPLAY=":1"
         vncserver -kill :1
+        cowsay -c DONE!
         screenfetch>nul
         clear
         figlet -c  Congratulations!
@@ -41,8 +42,8 @@ case ${answer:0:1} in
         echo
     ;;
     * )
-        screenfetch>nul
         clear
+        screenfetch>nul
         figlet -c WHY DID YOU DO THIS TO ME?!??!
         echo "Abort..."
     ;;
