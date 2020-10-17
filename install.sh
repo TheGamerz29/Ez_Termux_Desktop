@@ -19,13 +19,13 @@ case ${answer:0:1} in
         echo "downloading required files..."
         echo "don't mind the error."
         echo "it's normal"
-        pkg update -y>nul && pkg upgrade>nul && pkg install -y x11-repo>nul && pkg install -y tigervnc openbox obconf xorg-xsetroot xcompmgr xterm polybar st libnl zsh geany pcmanfm rofi feh neofetch htop vim elinks mutt git wget curl xfce4-settings>nul
+        pkg update -y>nul && clear && pkg upgrade>nul && clear && pkg install -y x11-repo>nul && pkg install -y tigervnc openbox obconf xorg-xsetroot xcompmgr xterm polybar st libnl zsh geany pcmanfm rofi feh neofetch htop vim elinks mutt git wget curl xfce4-settings>nul
         clear
         figlet -c DONE.
         screenfetch>nul
         clear
         echo "Configuring..."
-        cd $HOME && git clone https://github.com/adi1090x/termux-desktop>nul
+        cd $HOME && git clone https://github.com/adi1090x/termux-desktop
         cd termux-desktop
         cp -rf ./home /data/data/com.termux/files && cp -rf ./usr /data/data/com.termux/files
         vncserver -localhost
