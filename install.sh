@@ -1,6 +1,7 @@
 #!/bin/bash
 ## Code from adi1090! Thx!. Without him, i can't create this!
 apt install -y figlet screenfetch
+clear
 screenfetch>nul
 clear
 figlet -c       EZ_TERMUX_DESKTOP
