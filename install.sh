@@ -19,7 +19,11 @@ case ${answer:0:1} in
         echo "downloading required files..."
         echo "don't mind the error."
         echo "it's normal"
-        pkg update -y>nul && clear && pkg upgrade>nul && clear && pkg install -y x11-repo>nul && pkg install -y tigervnc openbox obconf xorg-xsetroot xcompmgr xterm polybar st libnl zsh geany pcmanfm rofi feh neofetch htop vim elinks mutt git wget curl xfce4-settings>nul
+        pkg update -y>nul
+        clear
+        pkg upgrade>nul
+        clear
+        pkg install -y x11-repo>nul && pkg install -y tigervnc openbox obconf xorg-xsetroot xcompmgr xterm polybar st libnl zsh geany pcmanfm rofi feh neofetch htop vim elinks mutt git wget curl xfce4-settings
         clear
         figlet -c DONE.
         screenfetch>nul
